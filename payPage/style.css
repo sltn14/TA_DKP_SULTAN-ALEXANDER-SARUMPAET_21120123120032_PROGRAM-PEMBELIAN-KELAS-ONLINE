@@ -1,0 +1,124 @@
+/* style.css */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variabel */
+:root {
+    --dark-gray: #333;
+    --light-gray: #ccc;
+    --hover-dark-gray: #555;
+    --success-green: #4CAF50;
+    --hover-success-green: #45a049;
+    --transition-speed: 0.3s;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container, .container2 {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: var(--dark-gray);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.box, .payment-form select, .back-link a {
+    border: 1px solid var(--light-gray);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form input[type="submit"], .btn, .btn-home {
+    background-color: var(--dark-gray);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.payment-form input[type="submit"]:hover, .btn:hover, .btn-home:hover {
+    background-color: var(--hover-dark-gray);
+}
+
+.back-link a:hover {
+    background-color: var(--dark-gray);
+    color: #fff;
+}
+
+.success-message {
+    border: 2px solid var(--success-green);
+    background-color: #f5f5f5;
+    color: var(--success-green);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s;
+    font-size: 18px; /* Ukuran font yang lebih besar */
+    font-weight: bold; /* Membuat teks lebih tebal */
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Menambahkan ikon ceklis */
+.success-message::before {
+    content: "\2713"; /* Unicode untuk ceklis */
+    color: var(--success-green);
+    font-size: 24px; /* Ukuran ikon */
+    padding-right: 10px; /* Jarak antara ikon dan teks */
+    vertical-align: middle; /* Menyelaraskan ikon dengan teks */
+}
+
+.card {
+    transition: transform var(--transition-speed) ease;
+    animation: fadeIn 1s;
+    flex: 0 1 30%;
+    margin: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;} 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

@@ -1,0 +1,97 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Light', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+    transition: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    background-color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    color: #333;
+    font-size: 32px;
+}
+
+.hero p {
+    color: #555;
+    font-size: 18px;
+}
+
+/* About Section */
+.about {
+    background-color: #e9e9e9;
+    margin: 20px;
+    padding: 40px; /* Padding yang lebih besar */
+    border-radius: 8px; /* Tambahkan border radius */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Shadow untuk about section */
+}
+
+.about h3 {
+    color: #333;
+    font-size: 16px;
+}
+
+.about p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3); /* Shadow di bagian atas footer */
+}
+/* General Text Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Droid Sans', sans-serif;
+}

@@ -1,0 +1,189 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-image: url('./img/bghome.jpg');
+background-size: cover;
+background-position: center;
+color: #333;
+}
+
+h1, h2, h3, h4 {
+font-weight: 300;
+}
+
+nav {
+    background-color: #34495e; /* Warna latar belakang yang elegan */
+    text-align: center;
+    padding: 15px 0; /* Padding vertikal yang lebih besar */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Menambahkan shadow untuk efek 3D ringan */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Menghilangkan margin default */
+    display: flex; /* Menggunakan flexbox untuk alignment */
+    justify-content: center; /* Menyelaraskan item secara horizontal di tengah */
+    align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+}
+
+nav ul li {
+    margin: 0 20px; /* Memberikan jarak horizontal antar item */
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px; /* Ukuran font yang lebih besar */
+    font-weight: 500; /* Font sedikit tebal */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    padding: 10px 20px; /* Padding untuk membuat tautan lebih besar dan mudah diklik */
+    border-radius: 5px; /* Memberikan border radius */
+    transition: background-color 0.3s, color 0.3s; /* Transisi untuk background dan warna teks */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #1abc9c; /* Warna latar saat hover atau fokus */
+    color: #ffffff; /* Warna teks saat hover atau fokus */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15); /* Shadow saat hover atau fokus */
+}
+
+/* Hero Section */
+.hero {
+height: 100vh;
+color: #fff;
+padding: 100px;
+text-align: center;
+background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+font-size: 48px;
+margin-bottom: 20px;
+}
+
+.hero p {
+font-size: 24px;
+}
+
+.hero .btn {
+    font-size: 20pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    width: 250 px !important;
+    padding: 15px 20px;
+    background-color: #3498db; /* Warna biru yang lebih konsisten dengan elemen lain */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all ease 0.5s;
+}
+
+.hero .btn:hover {
+    background-color: #1abc9c; /* Warna hijau saat hover untuk konsistensi dengan navigasi */
+    transition: all ease 0.5s;
+}
+
+.hero .btn:hover, .card .btn:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Features Section */
+.features {
+background-color: #ecf0f1;
+color: #333;
+padding: 50px;
+text-align: center;
+}
+
+.features h3 {
+font-size: 32px;
+margin-bottom: 20px;
+}
+
+.features p {
+font-size: 18px;
+}
+
+.card-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+}
+
+.card {
+width: calc(33.33%-10px);
+border-radius: 10px;
+background-color: #fff;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+width: 300px;
+padding: 15px;
+margin: 0 20px 20px;
+margin-bottom: 30px;
+text-align: center;
+}
+
+
+.card h4 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card p{
+font-size: 16px;
+margin-bottom: 20px;
+}
+
+.card img {
+border-radius: 5px;
+background-size: cover;
+width: 100%;
+height: 200px;
+margin-bottom: 0px;
+}
+
+.card .btn{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color: #3498db; /* Warna biru yang lebih konsisten dengan elemen lain */
+    width: 70%;
+    height: 35px;
+    border-radius: 10px;
+    transition: all ease 1s;
+}
+
+.card .btn:hover{
+    background-color: #1abc9c; /* Warna hijau saat hover untuk konsistensi dengan navigasi */
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #34495e; /* Warna latar belakang yang elegan */
+    color: #fff; /* Warna teks putih untuk kontras yang baik */
+    padding: 20px; /* Padding yang cukup untuk memberi ruang */
+    text-align: center; /* Teks diselaraskan ke tengah */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Shadow di bagian atas footer untuk efek kedalaman */
+    font-size: 16px; /* Ukuran font yang sesuai */
+}
+
+footer::after {
+    content: '© 2024 Sultan Alexander Sarumpaet. All rights reserved.'; /* Hak cipta dan informasi footer */
+    color: #bdc3c7; /* Warna teks yang lebih terang */
+    display: block; /* Membuat teks menjadi blok untuk memudahkan styling */
+    padding-top: 10px; /* Padding atas untuk jarak antara teks dan batas footer */
+    font-size: 14px; /* Ukuran font yang lebih kecil untuk teks hak cipta */
+}
+

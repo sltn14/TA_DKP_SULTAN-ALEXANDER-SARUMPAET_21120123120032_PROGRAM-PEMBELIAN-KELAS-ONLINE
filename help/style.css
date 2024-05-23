@@ -1,0 +1,54 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+#header {
+    background-color: #34495e; /* Sesuaikan dengan warna yang digunakan di halaman lain */
+    color: #fff;
+    padding: 10px; /* Mengurangi padding header menjadi 10px */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Menambahkan shadow untuk efek kedalaman */
+}
+#footer {
+    background-color: #34495e; /* Sesuaikan dengan warna yang digunakan di halaman lain */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Menambahkan shadow untuk efek kedalaman */
+}
+#content {
+    margin: 20px auto; /* Tambahkan auto untuk centering */
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px; /* Border radius yang lebih besar */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2); /* Shadow yang lebih tebal */
+    width: 80%; /* Mengontrol lebar konten */
+    max-width: 800px; /* Maksimal lebar */
+}
+a {
+    color: #0275d8; /* Warna biru yang lebih cerah */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out; /* Transisi yang lebih halus */
+}
+a:hover {
+    color: white; /* Warna saat hover */ /* Menambahkan underline saat hover */
+}
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #3498db; /* Sesuaikan dengan warna biru yang digunakan di halaman lain */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Menambahkan shadow untuk efek kedalaman */
+}
+.back-button:hover {
+    background-color: #1abc9c; /* Warna saat tombol di-hover */
+    transform: scale(1.1); /* Efek zoom saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan shadow saat hover */
+}
